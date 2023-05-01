@@ -2,7 +2,13 @@ import React from "react";
 import { AiOutlineDoubleLeft } from "react-icons/ai";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
-import { FcBusiness } from "react-icons/fc";
+// import { FcBusiness } from "react-icons/fc";
+import { FcBusinessContact } from "react-icons/fc";
+import { FcDebt } from "react-icons/fc";
+import { FcApprove } from "react-icons/fc";
+import { FcLock } from "react-icons/fc";
+import { FcUnlock } from "react-icons/fc";
+import { FcManager } from "react-icons/fc";
 import { TbPlus } from "react-icons/tb";
 import { CiSearch } from "react-icons/ci";
 import { BiChevronDown } from "react-icons/bi";
@@ -60,7 +66,7 @@ const Dashboard = () => {
         >
           <div>
             {" "}
-            <Avatar alt="image"></Avatar>
+            <Avatar></Avatar>
           </div>
 
           <Typography>
@@ -331,7 +337,7 @@ const Dashboard = () => {
                 {" "}
                 <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcApprove size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -353,7 +359,7 @@ const Dashboard = () => {
                 </div>
                 <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcBusinessContact size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -375,7 +381,7 @@ const Dashboard = () => {
                 </div>
                 <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcDebt size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -411,7 +417,7 @@ const Dashboard = () => {
                   }}
                 >
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcManager size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -440,7 +446,7 @@ const Dashboard = () => {
                   }}
                 >
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcLock size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -469,7 +475,7 @@ const Dashboard = () => {
                   }}
                 >
                   {" "}
-                  <FcBusiness size={"50px"} />
+                  <FcUnlock size={"50px"} />
                   <div>
                     {" "}
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -651,11 +657,11 @@ const Dashboard = () => {
                   defaultValue="All"
                   sx={{ m: 1, width: "20ch" }}
                   InputProps={{
-                    endAdornment: (
+                    endAdornment: [
                       <InputAdornment position="end">
                         <BiChevronDown size={30} />
-                      </InputAdornment>
-                    ),
+                      </InputAdornment>,
+                    ],
                   }}
                 ></TextField>
                 <TextField
@@ -687,14 +693,14 @@ const Dashboard = () => {
                 <TextField
                   // label="With normal TextField"
                   id="outlined-start-adornment"
-                  defaultValue="Search"
                   sx={{ m: 1, width: "70ch" }}
                   InputProps={{
-                    startAdornment: (
+                    startAdornment: [
                       <InputAdornment position="start">
                         <CiSearch size={30} />
-                      </InputAdornment>
-                    ),
+                        Search
+                      </InputAdornment>,
+                    ],
                   }}
                 ></TextField>
               </div>
