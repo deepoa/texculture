@@ -343,8 +343,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Total Offered
                     </Typography>
-                    <Typography>
-                      <b>20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}>20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
@@ -365,8 +367,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Pending Offers{" "}
                     </Typography>
-                    <Typography>
-                      <b>20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}>20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
@@ -387,8 +391,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Pending OnBoarding{" "}
                     </Typography>
-                    <Typography>
-                      <b>20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}>20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
@@ -423,8 +429,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Joining Overdue
                     </Typography>
-                    <Typography>
-                      <b>20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}>20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
@@ -452,8 +460,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Joined
                     </Typography>
-                    <Typography color="">
-                      <b>20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}>20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
@@ -481,8 +491,10 @@ const Dashboard = () => {
                     <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                       Not Joined
                     </Typography>
-                    <Typography>
-                      <b> 20 </b> invoices
+                    <Typography
+                      sx={{ color: "text.secondary", fontWeight: "bold" }}
+                    >
+                      <b style={{ color: "black" }}> 20 </b> invoices
                     </Typography>
                     <Typography
                       sx={{
