@@ -4,6 +4,11 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
 import { FcBusiness } from "react-icons/fc";
 import { TbPlus } from "react-icons/tb";
+import { CiSearch } from "react-icons/ci";
+import { BiChevronDown } from "react-icons/bi";
+import { BsFillCalendarFill } from "react-icons/bs";
+import { MdArrowUpward } from "react-icons/md";
+import { BiChevronLeft } from "react-icons/bi";
 import Box from "@mui/material/Box";
 import { grey, lightGreen, green, teal } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
@@ -23,7 +28,6 @@ import MenuItem from "@mui/material/MenuItem";
 import InputAdornment from "@mui/material/InputAdornment";
 import Divider from "@mui/material/Divider";
 import Switch from "@mui/material/Switch";
-
 const color = grey[100];
 const color2 = lightGreen[100];
 const darkGreen = green[500];
@@ -53,26 +57,77 @@ const Dashboard = () => {
         }}
         key={index}
       >
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+        <div>
+          {" "}
+          <Avatar alt="image"></Avatar>
+        </div>
+
         <Typography>
           Employee Name
-          <Typography>Role</Typography>
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            Role
+          </Typography>
         </Typography>
         <Typography>
           Joining Date
-          <Typography>Employee Code</Typography>
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            Employee Code
+          </Typography>
         </Typography>
         <Typography>
-          Designation <Typography> Department</Typography>
+          Designation{" "}
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            {" "}
+            Department
+          </Typography>
         </Typography>
         <Typography>
-          Phone No <Typography> Email</Typography>
+          Phone No{" "}
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            {" "}
+            Email
+          </Typography>
         </Typography>
         <Typography>
-          Location <Typography> Business Function</Typography>
+          Location{" "}
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            {" "}
+            Business Function
+          </Typography>
         </Typography>
         <Typography>
-          Status <Typography> Full time</Typography>
+          <span
+            style={{
+              backgroundColor: "#c8e6c9",
+              padding: "5px 15px ",
+              borderRadius: "5%",
+              color: "#2e7d32",
+            }}
+          >
+            joined{" "}
+          </span>
+          <Typography
+            sx={{ fontWeight: "bold", padding: "10px 0" }}
+            color="text.secondary"
+          >
+            {" "}
+            Full time
+          </Typography>
         </Typography>
       </div>
     );
@@ -158,28 +213,28 @@ const Dashboard = () => {
             >
               <ListItem>
                 <ListItemText id="switch-list-label-wifi" primary="Employee" />
-                <MdOutlineKeyboardArrowRight />
+                <MdOutlineKeyboardArrowRight size={20} />
               </ListItem>
               <ListItem>
                 <ListItemText
                   id="switch-list-label-bluetooth"
                   primary="Attendance"
                 />
-                <MdOutlineKeyboardArrowRight />
+                <MdOutlineKeyboardArrowRight size={20} />
               </ListItem>
               <ListItem>
                 <ListItemText
                   id="switch-list-label-bluetooth"
                   primary="Leaves"
                 />
-                <MdOutlineKeyboardArrowRight />
+                <MdOutlineKeyboardArrowRight size={20} />
               </ListItem>{" "}
               <ListItem>
                 <ListItemText
                   id="switch-list-label-bluetooth"
                   primary="Payroll"
                 />
-                <MdOutlineKeyboardArrowRight />
+                <MdOutlineKeyboardArrowRight size={20} />
               </ListItem>{" "}
               <ListItem>
                 <ListItemText
@@ -211,7 +266,9 @@ const Dashboard = () => {
             <div>
               <div>
                 {" "}
-                <Typography variant="h5">Job Offers</Typography>
+                <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                  Job Offers
+                </Typography>
               </div>
               <div style={{ padding: "20px 0", display: "flex" }}>
                 {" "}
@@ -275,11 +332,21 @@ const Dashboard = () => {
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Total Offered
+                    </Typography>
                     <Typography>
                       <b>20 </b> invoices
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography
+                      sx={{
+                        color: "#64b5f6",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>
                 <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
@@ -287,11 +354,21 @@ const Dashboard = () => {
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Pending Offers{" "}
+                    </Typography>
                     <Typography>
                       <b>20 </b> invoices
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography
+                      sx={{
+                        color: "#ff7043",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>
                 <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
@@ -299,11 +376,21 @@ const Dashboard = () => {
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Pending OnBoarding{" "}
+                    </Typography>
                     <Typography>
                       <b>20 </b> invoices
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography
+                      sx={{
+                        color: "#ff7043",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>
               </div>
@@ -314,40 +401,90 @@ const Dashboard = () => {
                 }}
               >
                 {" "}
-                <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
+                <div
+                  style={{
+                    padding: "30px",
+                    display: "flex",
+                    gap: "20px",
+                  }}
+                >
                   {" "}
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Joining Overdue
+                    </Typography>
                     <Typography>
                       <b>20 </b> invoices
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography
+                      sx={{
+                        color: "#f44336",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>{" "}
-                <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
+                <div
+                  style={{
+                    padding: "30px",
+                    display: "flex",
+                    gap: "20px",
+                    marginRight: "7%",
+                  }}
+                >
                   {" "}
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
-                    <Typography>
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Joined
+                    </Typography>
+                    <Typography color="">
                       <b>20 </b> invoices
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography
+                      sx={{
+                        color: "#81c784",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>{" "}
-                <div style={{ padding: "30px", display: "flex", gap: "20px" }}>
+                <div
+                  style={{
+                    padding: "30px",
+                    display: "flex",
+                    gap: "20px",
+                    marginRight: "7%",
+                  }}
+                >
                   {" "}
                   <FcBusiness size={"50px"} />
                   <div>
                     {" "}
-                    <Typography variant="h5">Total Offered</Typography>
-                    <Typography>
-                      <b>20 </b> invoices
+                    <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                      Not Joined
                     </Typography>
-                    <Typography>$1,205.75</Typography>
+                    <Typography>
+                      <b> 20 </b> invoices
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "#bdbdbd",
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      $1,205.75
+                    </Typography>
                   </div>
                 </div>
               </div>
@@ -360,7 +497,7 @@ const Dashboard = () => {
               "& > :not(style)": {
                 m: 1,
                 width: 1400,
-                height: 1250,
+                height: 1450,
               },
             }}
           >
@@ -372,72 +509,132 @@ const Dashboard = () => {
                   backgroundColor: "#f5f5f5",
                 }}
               >
-                <Typography
-                  sx={{ fontSize: 16, fontWeight: "bold", padding: "20px" }}
-                >
-                  20 Total Offered
+                <Typography sx={{ fontSize: 16, padding: "20px" }}>
+                  <b
+                    style={{
+                      backgroundColor: "#64b5f6",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#0277bd",
+                      margin: "0 10px",
+                    }}
+                  >
+                    20{" "}
+                  </b>{" "}
+                  Total Offered
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: 16,
-                    fontWeight: "bold",
                     padding: "20px",
                   }}
                 >
-                  20 Total Offered
+                  <b
+                    style={{
+                      backgroundColor: "#ffcc80",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#ef6c00",
+                      margin: "0 10px",
+                    }}
+                  >
+                    {" "}
+                    20
+                  </b>{" "}
+                  Pending Offers{" "}
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: 16,
-                    fontWeight: "bold",
                     padding: "20px",
                   }}
                 >
-                  20 Total Offered
+                  <b
+                    style={{
+                      backgroundColor: "#ffab91",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#d84315",
+                      margin: "0 10px",
+                    }}
+                  >
+                    {" "}
+                    20
+                  </b>{" "}
+                  Pending OnBoarding{" "}
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: 16,
-                    fontWeight: "bold",
                     padding: "20px",
                   }}
                 >
-                  20 Total Offered
+                  <b
+                    style={{
+                      backgroundColor: "#c8e6c9",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#2e7d32",
+                      margin: "0 10px",
+                    }}
+                  >
+                    {" "}
+                    20
+                  </b>{" "}
+                  Joining Overdue{" "}
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: 16,
-                    fontWeight: "bold",
                     padding: "20px",
                   }}
                 >
-                  20 Total Offered
+                  <b
+                    style={{
+                      backgroundColor: "#c8e6c9",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#2e7d32",
+                      margin: "0 10px",
+                    }}
+                  >
+                    {" "}
+                    20
+                  </b>{" "}
+                  Joined{" "}
                 </Typography>
-                <Typography
-                  sx={{ fontSize: 16, fontWeight: "bold", padding: "20px" }}
-                >
-                  20 Total Offered
+                <Typography sx={{ fontSize: 16, padding: "20px" }}>
+                  <b
+                    style={{
+                      backgroundColor: "#eeeeee",
+                      padding: "5px 5px ",
+                      borderRadius: "20%",
+                      color: "#9e9e9e",
+                      margin: "0 10px",
+                    }}
+                  >
+                    {" "}
+                    20
+                  </b>{" "}
+                  NotJoined{" "}
                 </Typography>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "around",
+                  marginLeft: "50px",
+                }}
+              >
                 <TextField
                   // label="With normal TextField"
                   id="outlined-start-adornment"
+                  defaultValue="All"
                   sx={{ m: 1, width: "20ch" }}
                   InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">All</InputAdornment>
-                    ),
-                  }}
-                ></TextField>
-                <TextField
-                  // label="With normal TextField"
-                  id="outlined-start-adornment"
-                  sx={{ m: 1, width: "20ch" }}
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        Start Date
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <BiChevronDown size={30} />
                       </InputAdornment>
                     ),
                   }}
@@ -445,20 +642,39 @@ const Dashboard = () => {
                 <TextField
                   // label="With normal TextField"
                   id="outlined-start-adornment"
+                  defaultValue="StartDate"
                   sx={{ m: 1, width: "20ch" }}
                   InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">End Date</InputAdornment>
+                    endAdornment: (
+                      <InputAdornment position="start">
+                        <BsFillCalendarFill size={25} />
+                      </InputAdornment>
                     ),
                   }}
                 ></TextField>
                 <TextField
                   // label="With normal TextField"
                   id="outlined-start-adornment"
-                  sx={{ m: 1, width: "30ch" }}
+                  defaultValue="End Date"
+                  sx={{ m: 1, width: "20ch" }}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="start">
+                        <BsFillCalendarFill size={25} />
+                      </InputAdornment>
+                    ),
+                  }}
+                ></TextField>
+                <TextField
+                  // label="With normal TextField"
+                  id="outlined-start-adornment"
+                  defaultValue="Search"
+                  sx={{ m: 1, width: "70ch" }}
                   InputProps={{
                     startAdornment: (
-                      <InputAdornment position="start">Search</InputAdornment>
+                      <InputAdornment position="start">
+                        <CiSearch size={30} />
+                      </InputAdornment>
                     ),
                   }}
                 ></TextField>
@@ -471,8 +687,13 @@ const Dashboard = () => {
                   backgroundColor: "#f5f5f5",
                 }}
               >
+                <div></div>
                 <Typography>
                   Name
+                  <span>
+                    {" "}
+                    <MdArrowUpward />
+                  </span>
                   <Typography>Role</Typography>
                 </Typography>
                 <Typography>
@@ -514,15 +735,29 @@ const Dashboard = () => {
                     Dense
                   </Typography>
                 </div>
-                <div style={{ display: "flex", padding: "20px" }}>
-                  <Typography sx={{ padding: "8px", fontWeight: "bold" }}>
-                    Row per page
-                  </Typography>
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "20px",
+                    marginRight: "30px",
+                    gap: "30px",
+                  }}
+                >
+                  <Typography sx={{ padding: "8px" }}>Row per page</Typography>
                   <Typography sx={{ padding: "8px", fontWeight: "bold" }}>
                     10
                   </Typography>
+                  <div style={{ paddingTop: "10px" }}>
+                    {" "}
+                    <BiChevronDown size={20} />
+                  </div>
+
                   <Typography sx={{ padding: "8px", fontWeight: "bold" }}>
                     1-5 of 24
+                    <span>
+                      {" "}
+                      <BiChevronLeft size={20} />
+                    </span>
                   </Typography>
                 </div>
               </div>
