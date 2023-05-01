@@ -49,87 +49,89 @@ const Dashboard = () => {
 
   Array.from({ length: 10 }).forEach((_, index) => {
     pTags.push(
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          padding: "20px",
-        }}
-        key={index}
-      >
-        <div>
-          {" "}
-          <Avatar alt="image"></Avatar>
-        </div>
+      <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            padding: "20px",
+          }}
+          key={index}
+        >
+          <div>
+            {" "}
+            <Avatar alt="image"></Avatar>
+          </div>
 
-        <Typography>
-          Employee Name
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            Role
+          <Typography>
+            Employee Name
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              Role
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography>
-          Joining Date
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            Employee Code
+          <Typography>
+            Joining Date
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              Employee Code
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography>
-          Designation{" "}
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            {" "}
-            Department
+          <Typography>
+            Designation{" "}
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              {" "}
+              Department
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography>
-          Phone No{" "}
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            {" "}
-            Email
+          <Typography>
+            Phone No{" "}
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              {" "}
+              Email
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography>
-          Location{" "}
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            {" "}
-            Business Function
+          <Typography>
+            Location{" "}
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              {" "}
+              Business Function
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography>
-          <span
-            style={{
-              backgroundColor: "#c8e6c9",
-              padding: "5px 15px ",
-              borderRadius: "5%",
-              color: "#2e7d32",
-            }}
-          >
-            joined{" "}
-          </span>
-          <Typography
-            sx={{ fontWeight: "bold", padding: "10px 0" }}
-            color="text.secondary"
-          >
-            {" "}
-            Full time
+          <Typography>
+            <span
+              style={{
+                backgroundColor: "#c8e6c9",
+                padding: "5px 15px ",
+                borderRadius: "5%",
+                color: "#2e7d32",
+              }}
+            >
+              joined{" "}
+            </span>
+            <Typography
+              sx={{ fontWeight: "bold", padding: "10px 0" }}
+              color="text.secondary"
+            >
+              {" "}
+              Full time
+            </Typography>
           </Typography>
-        </Typography>
-      </div>
+        </div>
+      </>
     );
   });
 
@@ -509,7 +511,9 @@ const Dashboard = () => {
                   backgroundColor: "#f5f5f5",
                 }}
               >
-                <Typography sx={{ fontSize: 16, padding: "20px" }}>
+                <Typography
+                  sx={{ fontSize: 16, padding: "20px", fontWeight: "bold" }}
+                >
                   <b
                     style={{
                       backgroundColor: "#64b5f6",
@@ -527,6 +531,8 @@ const Dashboard = () => {
                   sx={{
                     fontSize: 16,
                     padding: "20px",
+                    fontWeight: "bold",
+                    color: "text.secondary",
                   }}
                 >
                   <b
@@ -547,6 +553,8 @@ const Dashboard = () => {
                   sx={{
                     fontSize: 16,
                     padding: "20px",
+                    fontWeight: "bold",
+                    color: "text.secondary",
                   }}
                 >
                   <b
@@ -567,6 +575,8 @@ const Dashboard = () => {
                   sx={{
                     fontSize: 16,
                     padding: "20px",
+                    fontWeight: "bold",
+                    color: "text.secondary",
                   }}
                 >
                   <b
@@ -587,6 +597,8 @@ const Dashboard = () => {
                   sx={{
                     fontSize: 16,
                     padding: "20px",
+                    fontWeight: "bold",
+                    color: "text.secondary",
                   }}
                 >
                   <b
@@ -603,7 +615,14 @@ const Dashboard = () => {
                   </b>{" "}
                   Joined{" "}
                 </Typography>
-                <Typography sx={{ fontSize: 16, padding: "20px" }}>
+                <Typography
+                  sx={{
+                    fontSize: 16,
+                    padding: "20px",
+                    fontWeight: "bold",
+                    color: "text.secondary",
+                  }}
+                >
                   <b
                     style={{
                       backgroundColor: "#eeeeee",
